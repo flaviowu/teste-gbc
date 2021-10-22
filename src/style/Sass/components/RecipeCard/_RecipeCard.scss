@@ -1,0 +1,41 @@
+.recipe--card {
+  margin: 1.5rem;
+  display: flex;
+  height: 30vh;
+  width: 40vw;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-between;
+
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.19);
+
+  & img {
+    height: 100%;
+  }
+
+  & .card--titleButton {
+    & button {
+      width: 7rem;
+      height: 1.8rem;
+      background-color: #77d42a;
+      border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      //   padding: 10px 30px;
+      text-decoration: none;
+      border: none;
+    }
+
+    & button:hover {
+      background-color: #5cb811;
+    }
+
+    & button:active {
+      position: relative;
+      top: 1px;
+    }
+  }
+}

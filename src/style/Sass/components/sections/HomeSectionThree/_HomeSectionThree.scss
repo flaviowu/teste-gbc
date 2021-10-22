@@ -1,0 +1,13 @@
+@import '../../../common/common';
+
+.homeSectionThree {
+    background-image: url('../../../../../assets/sections-backgrounds/sectio-three.svg');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    @include sectionSize;
+    
+    & h1{
+        color: green;
+    }
+}

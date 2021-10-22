@@ -1,0 +1,9 @@
+@import '../../../common/common';
+
+.homeSectionFour {
+    @include sectionSize;
+    
+    & h1{
+        color: #000;
+    }
+}

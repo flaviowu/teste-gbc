@@ -1,0 +1,18 @@
+@import '../../../common/common';
+
+.homeSectionOne {
+    background-image: url('../../../../../assets/sections-backgrounds/section-One.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    @include sectionSize;
+
+    display: flex;
+    align-items: center;
+    
+    & .homeContent {
+        & h1 {
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../../common/common';
+
+.homeSectionTwo {
+    @include sectionSize;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .content--text {
+        align-content: center;
+        text-align: center;
+        width: 40vw;
+    }
+
+    & .content--recipes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}

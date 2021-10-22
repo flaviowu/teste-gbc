@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+header {
+  position: absolute;
+  color: green;
+  background-color: 1;
+}
+
+.homeSectionOne {
+  background-image: url("../../../../../assets/sections-backgrounds/section-One.svg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.homeSectionOne .homeContent h1 {
+  color: red;
+}
+
+.homeSectionTwo {
+  height: 100vh;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homeSectionTwo .content--text {
+  align-content: center;
+  text-align: center;
+  width: 40vw;
+}
+.homeSectionTwo .content--recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homeSectionThree {
+  background-image: url("../../../../../assets/sections-backgrounds/sectio-three.svg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.homeSectionThree h1 {
+  color: green;
+}
+
+.homeSectionFour {
+  height: 100vh;
+  width: 100%;
+}
+.homeSectionFour h1 {
+  color: #000;
+}
+
+.homeSectionFive {
+  background-image: url("../../../../../assets/sections-backgrounds/section_five.svg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.homeSectionFive h1 {
+  color: #000;
+}
+
+.recipe--card {
+  margin: 1.5rem;
+  display: flex;
+  height: 30vh;
+  width: 40vw;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.19);
+}
+.recipe--card img {
+  height: 100%;
+}
+.recipe--card .card--titleButton button {
+  width: 7rem;
+  height: 1.8rem;
+  background-color: #77d42a;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+.recipe--card .card--titleButton button:hover {
+  background-color: #5cb811;
+}
+.recipe--card .card--titleButton button:active {
+  position: relative;
+  top: 1px;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
