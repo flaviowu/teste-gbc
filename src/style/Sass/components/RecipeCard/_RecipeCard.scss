@@ -1,11 +1,11 @@
 .recipe--card {
   margin: 1.5rem;
   display: flex;
-  height: 30vh;
-  width: 40vw;
-  align-items: center;
+  height: 10rem;
+  width: 25rem;
   border-radius: 5px;
   justify-content: space-between;
+  font-size: large;
 
   box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.19);
 
@@ -14,14 +14,22 @@
   }
 
   & .card--titleButton {
+      padding: 2rem;
+      align-content: space-around;
+
+      & h3 {
+        font-size: larger;
+        margin: 0 0 .5rem 0;
+      }
+
     & button {
-      width: 7rem;
-      height: 1.8rem;
-      background-color: #77d42a;
+      width: 5rem;
+      height: 2.3rem;
+      background-color: #9ae260;
       border-radius: 5px;
       display: inline-block;
       cursor: pointer;
-      color: #ffffff;
+      color: #ffffffc0;
       font-size: 12px;
       font-weight: bold;
       //   padding: 10px 30px;

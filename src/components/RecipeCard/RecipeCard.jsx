@@ -6,7 +6,7 @@ function RecipeCard(props) {
     <div className="recipe--card">
       <img src={recipe.image} alt={`${recipe.title}`} />
       <div className="card--titleButton">
-        <h4>{recipe.title}</h4>
+        <h3>{recipe.title}</h3>
         <button>See Recipe</button>
       </div>
     </div>

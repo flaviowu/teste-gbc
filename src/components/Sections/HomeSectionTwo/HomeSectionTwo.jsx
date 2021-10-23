@@ -6,7 +6,7 @@ function HomeSectionTwo() {
   return (
     <div className="homeSectionTwo">
       <div className="content--text">
-        <h3>Our Best Recipes</h3>
+        <h2>Our Best Recipes</h2>
         <p>
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts.
