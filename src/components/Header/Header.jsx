@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../Navbar/Navbar";
 
 function Header() {
-    return (
-        <header>
-            <h1>Healthy Food - Header</h1>
-        </header>
-    )
+  return (
+    <header>
+      <div className="container__header">
+        <div className="wrapper__title">
+          <h1>Healthy Food</h1>
+        </div>
+          <Navbar />
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

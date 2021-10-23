@@ -9,7 +9,6 @@ import HomeSectionTwo from "../../components/Sections/HomeSectionTwo/HomeSection
 function Home() {
   return (
     <div>
-      <Header/>
       <HomeSectionOne />
       <HomeSectionTwo/>
       <HomeSectionThree/>

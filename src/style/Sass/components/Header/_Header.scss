@@ -1,5 +1,26 @@
+@import "../../common/colors.scss";
+
 header {
-    position: absolute;
-    color: green;
-    background-color: opacity($color: #ffffff);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  color: $light-green;
+  position: absolute;
+  background-color: opacity($color: #ffffff);
+
+  .container__header {
+		margin: 1rem 0 0 0;
+    justify-content: space-between;
+		align-items: baseline;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+
+    .wrapper__title {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }

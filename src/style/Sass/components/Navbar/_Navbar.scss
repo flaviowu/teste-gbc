@@ -1,0 +1,48 @@
+@import "../../../Sass/common/colors.scss";
+.wrapper__navbar {
+  width: 40%;
+  color: #ffffff;
+
+  .list__navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+
+    .list__navbar-item {
+      font-size: small;
+      transition: 300ms ease-in-out;
+    }
+
+    .list__navbar-item:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .list__navbar-btn {
+      & button {
+        width: 5rem;
+        height: 2.3rem;
+        background-color: #ffffff;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+        color: $light_green;
+        font-size: 12px;
+        font-weight: lighter;
+        text-decoration: none;
+        border: none;
+        transition: 300ms ease-in-out;
+      }
+
+      & button:hover {
+        transform: scale(1.1)
+      }
+
+      & button:active {
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
+}

@@ -1,8 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  color: #bbdc5a;
   position: absolute;
-  color: green;
   background-color: 1;
+}
+header .container__header {
+  margin: 1rem 0 0 0;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+}
+header .container__header .wrapper__title h1 {
+  font-size: 1.5rem;
 }
 
 .homeSectionOne {
@@ -15,8 +31,52 @@ header {
   display: flex;
   align-items: center;
 }
-.homeSectionOne .homeContent h1 {
-  color: red;
+.homeSectionOne .container__sectionOne {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 8.5rem;
+  align-content: stretch;
+  row-gap: 2rem;
+}
+.homeSectionOne .container__sectionOne .wrapper__title {
+  width: 45%;
+}
+.homeSectionOne .container__sectionOne .wrapper__title h2 {
+  color: #1f1551;
+  font-size: 300%;
+  font-weight: bold;
+}
+.homeSectionOne .container__sectionOne .wrapper__form-search {
+  justify-content: space-between;
+  width: 40%;
+}
+.homeSectionOne .container__sectionOne .wrapper__form-search .form__searchRecipe {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.2rem;
+}
+.homeSectionOne .container__sectionOne .wrapper__form-search .input__searchRecipe {
+  width: 100%;
+  height: 2rem;
+  font-size: small;
+  padding: 0 0 0 0.5rem;
+  font-weight: 100;
+  border-radius: 5px;
+  border: 1px solid #1f1551;
+  cursor: pointer;
+}
+.homeSectionOne .container__sectionOne .wrapper__form-search .input__searchRecipe-btn {
+  background-color: #bbdc5a;
+  color: #ffffff;
+  width: 2.6rem;
+  height: 2.1rem;
+  border-radius: 5px;
+  border: none;
+  transition: 300ms ease-in-out;
+  font-weight: lighter;
+}
+.homeSectionOne .container__sectionOne .wrapper__form-search .input__searchRecipe-btn:hover {
+  transform: scale(1.1);
 }
 
 .homeSectionTwo {
@@ -124,10 +184,52 @@ header {
   top: 1px;
 }
 
+.wrapper__navbar {
+  width: 40%;
+  color: #ffffff;
+}
+.wrapper__navbar .list__navbar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+.wrapper__navbar .list__navbar .list__navbar-item {
+  font-size: small;
+  transition: 300ms ease-in-out;
+}
+.wrapper__navbar .list__navbar .list__navbar-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.wrapper__navbar .list__navbar .list__navbar-btn button {
+  width: 5rem;
+  height: 2.3rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #bbdc5a;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+  border: none;
+  transition: 300ms ease-in-out;
+}
+.wrapper__navbar .list__navbar .list__navbar-btn button:hover {
+  transform: scale(1.1);
+}
+.wrapper__navbar .list__navbar .list__navbar-btn button:active {
+  position: relative;
+  top: 1px;
+}
+
 * {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  font-size: 100%;
+  font-family: Prompt, Montserrat, "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 /* width */

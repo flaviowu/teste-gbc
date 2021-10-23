@@ -1,49 +1,79 @@
-.recipe--card {
-  margin: 1.5rem;
+.card__recipe{
   display: flex;
-  height: 10rem;
-  width: 25rem;
+  width: 35%;
+  height: 30%;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
   border-radius: 5px;
-  justify-content: space-between;
+  align-items: stretch;
+  // justify-content: space-between;
   font-size: large;
 
-  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.19);
+  box-shadow: 5px 5px 10px 4px #00000030;
 
-  & img {
-    height: 100%;
+  & .card__image {
+    img {
+      height: 100%;
+    }
   }
 
-  & .card--titleButton {
-      padding: 2rem;
-      align-content: space-around;
-
-      & h3 {
+  & .wrapper__card-title-btn {
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    align-content: center; 
+    justify-content:space-evenly;
+    & h3 {
         font-size: larger;
-        margin: 0 0 .5rem 0;
       }
-
-    & button {
-      width: 5rem;
-      height: 2.3rem;
-      background-color: #9ae260;
-      border-radius: 5px;
-      display: inline-block;
-      cursor: pointer;
-      color: #ffffffc0;
-      font-size: 12px;
-      font-weight: bold;
-      //   padding: 10px 30px;
-      text-decoration: none;
-      border: none;
-    }
-
-    & button:hover {
-      background-color: #5cb811;
-    }
-
-    & button:active {
-      position: relative;
-      top: 1px;
-    }
+     & button {
+        width: 5rem;
+        height: 2.3rem;
+        background-color: #9ae260;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffffc0;
+        font-size: 12px;
+        font-weight: bold;
+        //   padding: 10px 30px;
+        text-decoration: none;
+        border: none;
+        transition: 300ms ease-in-out;
+      }
+  
+      & button:hover {
+        background-color: #5cb811;
+      }
+  
+      & button:active {
+        position: relative;
+        top: 1px;
+      }
   }
+
 }
+
+    // & button {
+    //   width: 5rem;
+    //   height: 2.3rem;
+    //   background-color: #9ae260;
+    //   border-radius: 5px;
+    //   display: inline-block;
+    //   cursor: pointer;
+    //   color: #ffffffc0;
+    //   font-size: 12px;
+    //   font-weight: bold;
+    //   //   padding: 10px 30px;
+    //   text-decoration: none;
+    //   border: none;
+    // }
+
+    // & button:hover {
+    //   background-color: #5cb811;
+    // }
+
+    // & button:active {
+    //   position: relative;
+    //   top: 1px;
+    // }
