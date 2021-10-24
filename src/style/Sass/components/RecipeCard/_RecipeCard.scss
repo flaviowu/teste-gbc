@@ -29,7 +29,7 @@
      & button {
         width: 5rem;
         height: 2.3rem;
-        background-color: #9ae260;
+        background-color: $light_green;
         border-radius: 5px;
         display: inline-block;
         cursor: pointer;
@@ -43,7 +43,9 @@
       }
   
       & button:hover {
-        background-color: #5cb811;
+        background-color: $dark_green;
+        transform: scale(1.1);
+        cursor: pointer;
       }
   
       & button:active {
@@ -53,6 +55,7 @@
   }
 
 }
+
 
     // & button {
     //   width: 5rem;

@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    height: 4rem;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    .wrapper__policy-terms-conditions{
+        display: flex;
+        flex-direction:row;
+        column-gap: 2rem;
+        p {
+            color: $light_gray;
+            transition: 300ms ease-in-out;
+        }
+
+        p:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+    }
+    

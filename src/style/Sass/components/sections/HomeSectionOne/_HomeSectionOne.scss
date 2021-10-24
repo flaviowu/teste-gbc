@@ -2,7 +2,7 @@
 
 .homeSectionOne {
   background-image: url("../../../../../assets/sections-backgrounds/section-One.svg");
-  background-size: contain;
+  background-size:auto;
   background-position: right;
   background-repeat: no-repeat;
   @include sectionSize;
@@ -13,12 +13,13 @@
   .container__sectionOne {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 8.5rem;
+    width: 60%;
     align-content: stretch;
+    align-items: center;
     row-gap: 2rem;
 
     & .wrapper__title {
-      width: 45%;
+      width: 40%;
 
       & h2 {
         color: $dark_blue;
@@ -28,6 +29,7 @@
     }
     & .wrapper__form-search {
       justify-content: space-between;
+      margin: 0 auto;
       width: 40%;
 
       & .form__searchRecipe {
@@ -37,14 +39,14 @@
       }
 
       & .input__searchRecipe-text {
-        color: rgb(153, 153, 153);
+        color: #999999;
         width: 100%;
         height: 2rem;
         font-size: small;
         padding: 0 0 0 0.5rem;
         font-weight: 100;
         border-radius: 5px;
-        border: 1px solid $dark_blue;
+        border: 1px solid $light_gray;
         cursor: pointer;
       }
 

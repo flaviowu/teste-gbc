@@ -5,7 +5,7 @@ header {
   justify-content: center;
   width: 100%;
   height: 3rem;
-  color: $light-green;
+
   position: absolute;
   background-color: opacity($color: #ffffff);
 
@@ -19,6 +19,7 @@ header {
 
     .wrapper__title {
       h1 {
+        color: $light-green;
         font-size: 1.5rem;
       }
     }

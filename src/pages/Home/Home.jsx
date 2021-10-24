@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/Header/Header";
 import HomeSectionFive from "../../components/Sections/HomeSectionFive/HomeSectionFive";
 import HomeSectionFour from "../../components/Sections/HomeSectionFour/HomeSectionFour";
 import HomeSectionOne from "../../components/Sections/HomeSectionOne/HomeSectionOne";

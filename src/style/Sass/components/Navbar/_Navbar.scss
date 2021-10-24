@@ -10,6 +10,7 @@
     align-items: center;
 
     .list__navbar-item {
+      color: $green-back_white;
       font-size: small;
       transition: 300ms ease-in-out;
     }
@@ -29,7 +30,6 @@
         cursor: pointer;
         color: $light_green;
         font-size: 12px;
-        font-weight: lighter;
         text-decoration: none;
         border: none;
         transition: 300ms ease-in-out;
