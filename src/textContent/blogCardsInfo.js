@@ -33,7 +33,7 @@ export const blogCardInfo = [
   },
   {
     id: 4,
-    title: "How to make your dish smile",
+    title: "What Makes a Healthy Diet?",
     image: image4,
     profile: {
       name: "Fill Murray",
