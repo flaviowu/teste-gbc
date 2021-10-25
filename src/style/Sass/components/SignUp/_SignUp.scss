@@ -1,0 +1,29 @@
+section.SignUp {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: $dark_green;
+  height: 100vh;
+
+  .container__signUp-form {
+    width: 40rem;
+    .form__signUp {
+      display: flex;
+      flex-direction: column;
+      .wrapper__personal-data {
+        display: flex;
+        flex-direction: column;
+      }
+      .wrapper__address_data {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .wrapper__input {
+        display: flex;
+        justify-content:space-between;
+        width: 100%;
+    }
+  }
+}
