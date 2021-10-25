@@ -4,20 +4,61 @@ section.SignUp {
   justify-content:center;
   align-items: center;
   background-color: $dark_green;
-  height: 100vh;
 
   .container__signUp-form {
-    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid $dark_blue;
+    box-shadow: 1px 10px 5px 1px rgba(0,0,0,0.2);
+    padding: 2.5rem;
+    margin: 6rem 0 6rem 0;
+    width: 50vw;
+    height: auto;
+    align-items: center;
+    row-gap: 2rem;
+
+
     .form__signUp {
       display: flex;
       flex-direction: column;
+      row-gap: 1.5rem;
+      width: 70%;
+
       .wrapper__personal-data {
         display: flex;
+        row-gap: .5rem;
         flex-direction: column;
       }
-      .wrapper__address_data {
+
+      .wrapper__address-data {
         display: flex;
+        row-gap: .5rem;
         flex-direction: column;
+      }
+
+      .wrapper__form-btns {
+        display: flex;
+        justify-content: space-around;
+
+        & input {
+          width: 10rem;
+          height: 3rem;
+          background-color: $light_green;
+          border-radius: 5px;
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          font-size: 12px;
+          text-decoration: none;
+          border: none;
+          transition: 300ms ease-in-out;
+        }
+
+        & input:hover {
+          transform: scale(1.1)
+        }
       }
     }
     .wrapper__input {
@@ -26,4 +67,14 @@ section.SignUp {
         width: 100%;
     }
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
