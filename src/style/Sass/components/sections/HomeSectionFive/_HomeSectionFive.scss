@@ -1,20 +1,16 @@
 @import "../../../common/common";
 
-.homeSectionFive {
-  background-image: url("../../../../../assets/sections-backgrounds/section_five.svg");
-  background-size: auto;
-  background-position: right;
-  background-repeat: no-repeat;
-  @include sectionSize;
-  display: flex;
+.section-five {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 
   .container__sectionFive {
+    grid-column: 1/6;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 32%;
     justify-content: center;
-    margin: 0 0 0 8rem;
     row-gap: 1rem;
 
     .wrapper__title {
@@ -52,6 +48,17 @@
           cursor: pointer;
         }
       }
+    }
+  }
+
+  .container__sectionFive-image {
+    grid-row: 1/4;
+    grid-column: 6/13;
+    height: fit-content;
+    justify-self: end;
+
+    img {
+      height: 100vh;
     }
   }
 }

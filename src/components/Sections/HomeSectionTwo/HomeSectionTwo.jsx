@@ -4,7 +4,7 @@ import { recipes } from "../../../textContent/recipe";
 
 function HomeSectionTwo() {
   return (
-    <section className="homeSectionTwo">
+    <section className="section-two">
       <div className="container__sectionTwo">
         <div className="wrapper__content-text">
           <h2>Our Best Recipes</h2>

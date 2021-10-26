@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavButton from "../NavButton/NavButton";
 
 function Navbar() {
   return (
@@ -9,7 +10,9 @@ function Navbar() {
         <li className="list__navbar-item">BLOG</li>
         <li className="list__navbar-item">JOIN</li>
         <li className="list__navbar-btn">
-          <Link to="/signUp" ><button className="register">REGISTER</button></Link>
+          <Link to="/signUp">
+            <button className="register">REGISTER</button>
+          </Link>
         </li>
       </ul>
     </div>

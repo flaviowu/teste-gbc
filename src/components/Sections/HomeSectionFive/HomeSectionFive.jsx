@@ -1,8 +1,9 @@
 import React from "react";
+import imageSectionFive from "../../../assets/sections-backgrounds/section_five.svg"
 
 function HomeSectionFive() {
   return (
-    <section className="homeSectionFive">
+    <section className="section-five">
       <div className="container__sectionFive">
         <div className="wrapper__title">
           <h2>Join our membership to get a special offer</h2>
@@ -19,6 +20,9 @@ function HomeSectionFive() {
           </form>
         </div>
       </div>
+        <div className="container__sectionFive-image">
+          <img src={imageSectionFive} alt="Two guys making a deal"/>
+        </div>
     </section>
   );
 }

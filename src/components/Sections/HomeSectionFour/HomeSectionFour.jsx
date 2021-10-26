@@ -3,11 +3,11 @@ import { blogCardInfo } from "../../../textContent/blogCardsInfo";
 import BlogCard from "../../BlogCard/BlogCard";
 
 function HomeSectionFour() {
-  const [cards, setCards] = useState(blogCardInfo);
+  const [cards] = useState(blogCardInfo);
 
   return (
-    <section className="homeSectionFour">
-      <div className="container__sectionFour">
+    <section className="section-four">
+      <div className="container__text">
         <div className="wrapper__text">
           <h2>Read Our Blog</h2>
           <p>
@@ -15,13 +15,13 @@ function HomeSectionFour() {
             Consonantia, there live the blind texts.
           </p>
         </div>
-        <div className="wrapper__blog-Carousel">
-          {/* <Carousel> **IMPLEMENTAR** */}
-            {cards.map((blogCard) => (
-              <BlogCard key={"post" + blogCard.id} cardData={blogCard} />
-            ))}
-          {/* </Carousel> */}
-        </div>
+      <div className="wrapper__blog-Carousel">
+        {/* <Carousel> **IMPLEMENTAR** */}
+        {cards.map((blogCard) => (
+          <BlogCard key={"post" + blogCard.id} cardData={blogCard} />
+          ))}
+        {/* </Carousel> */}
+          </div>
       </div>
     </section>
   );

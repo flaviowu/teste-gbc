@@ -1,63 +1,65 @@
-@import '../../../common/common';
+@import "../../../common/common";
 
-.homeSectionThree {
-    @include sectionSize;
-    background-image: url('../../../../../assets/sections-backgrounds/sectio-three.svg');
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat;
-    
-    display: flex;
-    justify-content: flex-end;
-    
-    .container__sectionThree{
-        display: flex;
-        flex-direction:column;
-        width: 50%;
-        align-items: stretch;
-        justify-content: center;
-        row-gap: 2.5rem;
+.section-three {
+  @include sectionSize;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
-        & .wrapper__title {
-            font-size: xx-large;
-        }
-
-        & .wrapper__paragraphs-btn {
-            display: flex;
-            flex-direction: column;
-            
-            row-gap: 1.5rem;
-            width: 75%;
-
-            & p {
-                color: $light_gray;
-            }
-
-            & .wrapper__btn--know-more {
-                & button {
-                    width: 7rem;
-                    height: 2.3rem;
-                    background-color: $light_green;
-                    border-radius: 5px;
-                    display: inline-block;
-                    cursor: pointer;
-                    color: #ffffff;
-                    font-size: 12px;
-                    text-decoration: none;
-                    border: none;
-                    transition: 300ms ease-in-out;
-                  }
-            
-                  & button:hover {
-                    transform: scale(1.1);
-                    background-color: $dark_green;
-                  }
-            
-                  & button:active {
-                    position: relative;
-                    top: 1px;
-                  }
-            }
-        }
+  & .container__content-image {
+    grid-column: 1;
+    & img {
+      height: 100vh;
     }
+  }
+
+  .container__content-three {
+    grid-column: 2/9;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    row-gap: 2.5rem;
+
+    & .wrapper__title {
+      font-size: 250%;
+    }
+
+    & .wrapper__paragraphs-btn {
+      display: flex;
+      flex-direction: column;
+
+      row-gap: 1.5rem;
+      width: 75%;
+
+      & p {
+        color: $light_gray;
+      }
+
+      & .wrapper__btn--know-more {
+        & button {
+          width: 7rem;
+          height: 2.3rem;
+          background-color: $light_green;
+          border-radius: 5px;
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          font-size: 12px;
+          text-decoration: none;
+          border: none;
+          transition: 300ms ease-in-out;
+        }
+
+        & button:hover {
+          transform: scale(1.1);
+          background-color: $dark_green;
+        }
+
+        & button:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
 }

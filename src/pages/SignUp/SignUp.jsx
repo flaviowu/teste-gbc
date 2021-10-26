@@ -10,7 +10,6 @@ function SignUp() {
   const [city, setCity] = useState("");
   const [district, setDistrict] = useState("");
   const [uf, setUf] = useState("");
-  const [registerOk, setRegisterOk] = useState(false);
 
   const handleCepApi = async (cep) => {
     const response = await api.getAddressbyCep(cep);
@@ -223,7 +222,6 @@ function SignUp() {
               type="submit"
               id="submit-btn"
               value="Register"
-              disabled={registerOk}
             />
             <input type="reset" id="reset-btn" value="Reset Form" />
           </div>

@@ -1,9 +1,14 @@
 import React from "react";
+import imageSectionThree from "../../../assets/sections-backgrounds/section-three.svg";
+
 
 function HomeSectionThree() {
   return (
-    <section className="homeSectionThree">
-      <div className="container__sectionThree">
+    <section className="section-three">
+      <div className="container__content-image">
+        <img src={imageSectionThree} alt="cooking girl in a kitchen"/>
+      </div>
+      <div className="container__content-three">
         <div className="wrapper__title">
           <h2>The best services ready</h2>
           <h2>To serve you</h2>
