@@ -6,11 +6,6 @@ import { useHistory } from "react-router-dom";
 
 function SignUp() {
   const history = useHistory();
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [birthday, setBirthday] = useState("");
-  // const [cpf, setCpf] = useState("");
-  // const [cep, setCep] = useState("");
   const [streetAddress, setStreetAddress] = useState("");
   const [city, setCity] = useState("");
   const [district, setDistrict] = useState("");
@@ -27,19 +22,6 @@ function SignUp() {
     setDistrict(addressData.bairro);
     setUf(addressData.uf);
   };
-
-  // const handleChange = (e) => {
-  //   e.preventDefault()
-  //   const fullName = e.target.name.value;
-  //   const email = e.target.email.value;
-  //   const birthday = e.target.birthday.value;
-  //   const cpf = e.target.cpf.value;
-
-  //   //address data without react hook useState
-  //   const houseNumber = e.target.houseNumber.value;
-  //   const cep = e.target.cep.value;
-
-  // }
 
   const handleCepChange = (e) => {
     e.preventDefault();
@@ -83,13 +65,31 @@ function SignUp() {
       },
     };
 
-    const userValidation = validateUser(payload);
+    let userValidation = validateUser(payload);
 
     if (userValidation.userStatus === true) {
       const payloadJson = JSON.stringify(payload);
       localStorage.setItem("USER", payloadJson);
       document.cookie = `USER=${payloadJson}; path=/`;
+      window.alert("Your data was sent.");
       history.push("/");
+    } else {
+      const addressData = userValidation.address;
+      delete userValidation.address;
+      userValidation = { ...userValidation.user };
+      console.log(addressData);
+      console.log(userValidation);
+      const invalidUserData = Object
+        .keys(userValidation)
+        .filter((key) => userValidation[key] === false);
+      const invalidAddressData = Object
+        .keys(addressData)
+        .filter((key) => addressData[key] === false);
+
+      console.log(invalidAddressData, invalidUserData);
+      window.alert(
+        `Your data was not set. Please verify the fields: ${invalidUserData}, ${invalidAddressData}.`
+      );
     }
   };
 
