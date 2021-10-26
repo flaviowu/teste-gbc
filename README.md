@@ -1,1 +1,1 @@
-# Teste Grupo GCG - Frontend
+# Teste Grupo GCB - Frontend
