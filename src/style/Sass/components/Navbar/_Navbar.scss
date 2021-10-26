@@ -1,48 +1,53 @@
 @import "../../../Sass/common/colors.scss";
 .wrapper__navbar {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: space-between;
   width: 40%;
   color: #ffffff;
 
   .list__navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     align-items: center;
-
+    width:80%;
+    
     .list__navbar-item {
       color: $green-back_white;
       font-size: small;
       transition: 300ms ease-in-out;
     }
-
-    .list__navbar-item:hover{
-        cursor: pointer;
-        transform: scale(1.1);
+    
+    .list__navbar-item:hover {
+      cursor: pointer;
+      transform: scale(1.1);
     }
+  }
+}
 
-    .list__navbar-btn {
-      & button {
-        width: 5rem;
-        height: 2.3rem;
-        background-color: #ffffff;
-        border-radius: 5px;
-        display: inline-block;
-        cursor: pointer;
-        color: $light_green;
-        font-size: 12px;
-        text-decoration: none;
-        border: none;
-        transition: 300ms ease-in-out;
-      }
+.button__register {
 
-      & button:hover {
-        transform: scale(1.1)
-      }
-
-      & button:active {
-        position: relative;
-        top: 1px;
-      }
-    }
+  & button {
+    width: 5rem;
+    height: 2.3rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: $light_green;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    transition: 300ms ease-in-out;
+  }
+  
+  & button:hover {
+    transform: scale(1.1);
+  }
+  
+  & button:active {
+    position: relative;
+    top: 1px;
   }
 }
