@@ -1,9 +1,10 @@
 import React from "react";
+import imageSectionOne from "../../../assets/sections-backgrounds/section-One.svg"
 
 function HomeSectionOne() {
   return (
-    <section className="homeSectionOne">
-      <div className="container__sectionOne">
+    <section className="section">
+      <div className="column-1 container__sectionOne-content">
         <div className="wrapper__title">
           <h2>Ready for Trying a new recipe?</h2>
         </div>
@@ -14,6 +15,9 @@ function HomeSectionOne() {
           </form>
         </div>
       </div>
+        <div className="column-2 container__sectionOne-image">
+          <img src={imageSectionOne} alt="people with a giant apple"/>
+        </div>
     </section>
   );
 }
